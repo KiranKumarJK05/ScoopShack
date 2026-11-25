@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ScoopShack 🍦
 
-# Run and deploy your AI Studio app
+A modern ice cream parlour management system built with React, TypeScript, and Java Spring Boot.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/2e5dcc6b-a801-48c6-a8b1-f106bc15cfcc
+Features:
+- Interactive menu browsing
+- Cart and checkout
+- Order management
+- Automated billing with student discounts and GST
+- Inventory and stock tracking
+- Bill lookup
+- Staff sales dashboard
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisite:** Node.js and Java 25.
 
+### 1. Start the frontend
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+### 2. Configure the backend
+
+The frontend uses the backend URL configured in `.env.local`:
+
+```env
+VITE_API_BASE_URL=http://localhost:8080
+```
+
+### 3. Start the Java backend
+
+Open a separate terminal:
+
+```powershell
+cd backend/backend
+.\mvnw.cmd spring-boot:run
+```
+
+The frontend runs at `http://localhost:3000` and the backend at `http://localhost:8080`.
+
+## Google AI Studio
+
+Original AI Studio app: https://ai.studio/apps/2e5dcc6b-a801-48c6-a8b1-f106bc15cfcc
