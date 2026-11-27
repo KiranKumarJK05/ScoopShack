@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://scoopshack-4e6ox0xqg-terraspace-explorer.vercel.app"
+})
 public class OrderController {
 
     private final OrderService orderService;
