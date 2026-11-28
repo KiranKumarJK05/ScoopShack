@@ -41,6 +41,4 @@ cd backend/backend
 
 The frontend runs at `http://localhost:3000` and the backend at `http://localhost:8080`.
 
-## Google AI Studio
-
-Original AI Studio app: https://ai.studio/apps/2e5dcc6b-a801-48c6-a8b1-f106bc15cfcc
+The final ScoopShack Website link : https://scoopshack.vercel.app/
